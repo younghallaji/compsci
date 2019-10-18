@@ -18,7 +18,7 @@
     <div class="nav black">
     <div class="container white-text" style="width: 80%; height:25px;">
       <a href="#!" class=" white-text" ><i class="fa fa-phone"></i> +234-7035743427 </a> &nbsp &nbsp &nbsp
-      <a href="#!" class=" white-text" ><i class="fa fas-envolope"></i> contact@nacossogitech.com</a>&nbsp &nbsp &nbsp
+      <a href="#!" class=" white-text hide-on-small-only" ><i class="fa fas-envolope"></i> contact@nacossogitech.com</a>&nbsp &nbsp &nbsp
       <a href="#!" class=" white-text" ><i class="fa fa-clock"></i> Current time: </a>
       
     </div>
