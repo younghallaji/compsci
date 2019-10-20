@@ -8,7 +8,7 @@ if($_POST["user"] == "" OR $_POST["pass"] == "")
 	}
 
 else{
-	$select = "SELECT * FROM tbl_student WHERE matricNo = '$_POST[user]' AND password = '$_POST[pass]' ";
+	$select = "SELECT * FROM tbl_student WHERE matricNo = '$_POST[user]' OR email = '$_POST[user]' AND password = '$_POST[pass]' ";
 	$query = mysqli_query($conn, $select);
 	$num = mysqli_num_rows($query);
 	$data = mysqli_fetch_array($query);
@@ -22,15 +22,15 @@ else{
 
 		else
 		{
-		$selectAdmin = "SELECT * FROM admin WHERE username = '$_POST[user]' AND password = '$_POST[pass]' ";
+		$selectAdmin = "SELECT * FROM admin WHERE username = '$_POST[user]' OR email = '$_POST[user]' AND password = '$_POST[pass]' ";
 		$queryAdmin = mysqli_query($conn, $selectAdmin);
 		$numofAdmin = mysqli_num_rows($queryAdmin);
 		$adminData = mysqli_fetch_array($queryAdmin);
 		if($numofAdmin > 0){
 
-			$_SESSION["username"] = $data["username"];
-			$_SESSION["email"] = $data["email"];
-			header("location:../footer.php");
+			$_SESSION["username"] = $adminData["username"];
+			$_SESSION["email"] = $adminData["email"];
+			header("location:../admin/dashboard.php");
 
 		}
 		else{
