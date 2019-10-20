@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+a{
+	color: red;
+}
+#box{
+	width: 100%;
+	max-width: 500px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 0 px;
+	box-sizing: border-box;
+	height: 270px;
+}
+.text{
+	font-size: 2em;
+	text-transform: capitalize;
+	font-family: sans-serif;
+}

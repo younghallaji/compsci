@@ -1,10 +1,14 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	  <link rel="shortcut icon" href="css/img/nac3.jpg" type="image/x-icon" />
-	  <link rel="stylesheet" type="text/css" href="css/main.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
 	  <link rel="stylesheet" href="css/all.min.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
@@ -12,7 +16,20 @@
       
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title> :: Welcome to NACOSS OGITECH </title>
-
+	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+	<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<style type="text/css">
+		#box{
+	width: 100%;
+	max-width: 500px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	height: 270px;
+}
+	</style>
 </head>
 <body>
     <div class="nav black">
@@ -55,27 +72,28 @@
      		 <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="fas fa-times"></i></a>
     		</div>
     	<div class="modal-content">
-      		<div class="">
-      			<h3 class="center">Login</h3>
+      		<div id="box">
+      			<form method="POST" action="script/login.php">
+      			<h3 class="center modal-title">Login</h3>
 			      	<div class="form-field col s12">
-			             <label for="fname" class="left">Username</label>
-			             <input type="text" id="fname" name="fname"><br>
+			             <label for="uname" class="left">Username</label>
+			             <input type="text" id="uname" name="user" class="text"><br>
 					</div>
 					
 					<div class="form-field col s12">
-			            <label for="fname" class="left">Password</label>
-			            <input type="password" id="fname" name="fname"><br>
+			            <label for="pass" class="left">Password</label>
+			            <input type="password" id="pass" name="pass"><br>
 			        </div>
 
-			        <div class="form-field col s12">
-						<a href="payment2.php" class="btn green">Login</a>
+			        <div class="form-field col s12 center">
+						<input type="submit" name="login" id="login" value="Login" class="btn green accent-4">
 			        </div>
+			        <div id="error"></div>
+			     </form>
      		</div>
    		 </div>
     
   </div>
-
-
 
 	 <script type="text/javascript">
       <?php include ('script.php');?>

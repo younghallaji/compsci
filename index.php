@@ -115,7 +115,7 @@
 	</div>
 </section>
 
-<!-- Gallery -->
+<!-- Gallery 
 <section class="section section-gallery row-3">
 	<div class="container">
 		<h4 class="center"><span class="green-text accent-4">Photo </span>GALLERY</h4>
@@ -164,6 +164,7 @@
 
 	</div>
 </section>
+-->
 <!-- Gallery -->
 
 
@@ -192,3 +193,8 @@
 
 </html>
 <?php include('footer.php');?>
+<script language="javascript">
+var new_msg ="<?php echo $_SESSION['index_msg']; unset($_SESSION['index_msg']);  ?>";
+if(new_msg !="")
+alert(new_msg);
+</script>
