@@ -5,6 +5,8 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	  <link rel="shortcut icon" href="css/img/nac3.jpg" type="image/x-icon" />
@@ -18,18 +20,7 @@ session_start();
 	<title> :: Welcome to NACOSS OGITECH </title>
 	<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
 	<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<style type="text/css">
-		#box{
-	width: 100%;
-	max-width: 500px;
-	border: 1px solid #ccc;
-	border-radius: 10px;
-	margin: 0 auto;
-	padding: 0 20px;
-	box-sizing: border-box;
-	height: 270px;
-}
-	</style>
+	
 </head>
 <body>
     <div class="nav black">
@@ -76,8 +67,8 @@ session_start();
       			<form method="POST" action="script/login.php">
       			<h3 class="center modal-title">Login</h3>
 			      	<div class="form-field col s12">
-			             <label for="uname" class="left">Username</label>
-			             <input type="text" id="uname" name="user" class="text"><br>
+			             <label for="user" class="left">Username</label>
+			             <input type="text" id="user" name="user" class="text"><br>
 					</div>
 					
 					<div class="form-field col s12">
@@ -86,7 +77,7 @@ session_start();
 			        </div>
 
 			        <div class="form-field col s12 center">
-						<input type="submit" name="login" id="login" value="Login" class="btn green accent-4">
+						<input type="submit" name="login" id="submit" value="Login" class="btn green accent-4">
 			        </div>
 			        <div id="error"></div>
 			     </form>
@@ -99,5 +90,6 @@ session_start();
       <?php include ('script.php');?>
     </script>
 
+<script type="text/javascript" src="js/script.js"> </script>
 <script type="text/javascript" src="js/all.min.js"> </script>
 <script type="text/javascript" src="js/materialize.min.js"> </script>
