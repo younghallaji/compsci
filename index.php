@@ -5,48 +5,48 @@
 		<li>
 			<img src="css/img/img1.jpg">
 			<div class="caption left-align">
-				<h2>Take your Dream Vacation</h2>
-				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-				<a href="#" class="btn btn-large">Learn more</a>
+				<h2>Explore a Carrer in Computer Networking</h2>
+				<h5 class="light grey-text text-lighten-3 hide-on-small-only">A computer network is a digital telecommunications network which allows nodes to share resources. In computer networks, computing devices exchange data with each other using connections (data links) between nodes. </h5>
+				<a href="https://www.netacad.com" class="btn btn-large">Learn more</a>
 			</div>
 		</li>
 		<li>
 			<img src="css/img/img2.jpg">
 			<div class="caption right-align">
-				<h2>Take your Dream Vacation</h2>
-				<h5 class="light black-text text-darken-2 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-				<a href="#" class="btn btn-large">Learn more</a>
+				<h2>Any Experience about Data Science ? </h2>
+				<h5 class="light white-text text-darken-2 hide-on-small-only">A Data Scientist combines statistical and machine learning techniques with Python programming to analyze and interpret complex data.</h5>
+				<a href="https://www.datacamp.com" class="btn btn-large">Learn more</a>
 			</div>
 		</li>
 		<li>
 			<img src="css/img/img3.jpg">
 			<div class="caption center-align">
-				<h2>Take your Dream Vacation</h2>
-				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
-				<a href="#" class="btn btn-large">Learn more</a>
+				<h2>Cloud Computing</h2>
+				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Access Free AWS Cloud Computing Power. Industry Leading Security. Agile, Reliable Service. Instances for Virtually Every Business Need. Scale Quickly For High Performance Computing. </h5>
+				<a href="https://aws.amazon.com" class="btn btn-large">Learn more</a>
 			</div>
 		</li>
 		<li>
 			<img src="css/img/img4.jpg">
 			<div class="caption">
-				<h2>Take your Dream Vacation</h2>
-				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+				<h2>Software Development</h2>
+				<h5 class="light grey-text text-lighten-3 hide-on-small-only">See how software is developed and how it can help your business compete</h5>
 				<a href="#" class="btn btn-large">Learn more</a>
 			</div>
 		</li>
 		<li>
 			<img src="css/img/img5.jpg">
 			<div class="caption">
-				<h2>Take your Dream Vacation</h2>
-				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+				<h2>Think beyond your limitation</h2>
+				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Persistence, perseverance, and continuous improvement are the ingredients for forming a successful person</h5>
 				<a href="#" class="btn btn-large">Learn more</a>
 			</div>
 		</li>
 		<li>
 			<img src="css/img/img6.jpg">
 			<div class="caption">
-				<h2>Take your Dream Vacation</h2>
-				<h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+				<h2>Advanced Computer Networking</h2>
+				<h5 class="light grey-text text-lighten-3 hide-on-small-only">The basics of gateways and routes. How to set up USB tethering. How to set up IEEE® 802.11 and Bluetooth® devices.</h5>
 				<a href="#" class="btn btn-large">Learn more</a>
 			</div>
 		</li>
@@ -104,19 +104,66 @@
 </section>
 <!-- ########################### -->
 <!-- CONTACT US -->
-<section class="section section-search grey lighten-4 grey-text center">
+<section id="contact" class="section section-search grey lighten-4 grey-text center">
 	<div class="container">
 		<div class="row">
 			<div class="col s12"></div>
 			<h3> Follow NACOSS Ogitech</h3>
 			<p> follow us on social media </p>
-			<button class="btn-large"> Contact us </button>
+			<p>
+				<a href=""><img src="css/ico/fc2.png"></a> &nbsp;
+				<a href=""><img src="css/ico/tw1.jpg"></a>
+			</p>
+			<a href="#contactUs" class="btn-large green accent-4 modal-trigger"> Contact us </a>
 		</div>
 	</div>
 </section>
 
+	  <div id="contactUs" class="modal">
+				 <div class="modal-footer">
+				      <a href="#!" class="modal-close waves-effect waves-green btn-flat"><i class="fas fa-times"></i></a>
+						    		</div>
+						    	<div class="modal-content">
+						   <div class="row">
+						    <form class="col s12">
+						    	<h3 class="center">CONTACT US</h3>
+						      <div class="row">
+						        <div class="input-field col s6">
+						          <input id="username" type="text" class="validate">
+						          <label for="username">Username</label>
+						        </div>
+						        <div class="input-field col s6">
+						          <input id="email" type="text" class="validate">
+						          <label for="email">Email</label>
+						        </div>
+						      </div>
+						      <div class="row">
+						        <div class="input-field col s12">
+						          <input id="discription" type="text" class="validate">
+						          <label for="discription">Description</label>
+						        </div>
+						      </div>
+							 <div class="row">
+							      <div class="input-field col s12">
+							        <i class="material-icons prefix">mode_edit</i>
+							         <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+							         <label for="icon_prefix2">Message</label>
+							        </div>
+							      </div>
+							  <div class="form-field col s12">
+								<a href="payment2.php" class="btn green">SUBMIT</a>
+			        		</div>
+					</div>
+				</form>
+				</div>
+
+
+   		 </div>
+    
+  </div>
+
 <!-- Gallery -->
-<section class="section section-gallery row-3">
+<section id="gallery" class="section section-gallery row-3">
 	<div class="container">
 		<h4 class="center"><span class="green-text accent-4">Photo </span>GALLERY</h4>
 		<div class="row">
